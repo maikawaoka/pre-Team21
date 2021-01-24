@@ -1,44 +1,14 @@
 $(function() {
-  // window.addEventListener('load', () => {
-  //   const array = $("body")[0].children;
-  //   $.each(array,function(index,element){
-  //     // debugger
-  //     if (element.className !== "main") {
-  //       element.classList.add("d-none")
-  //     }
-  //   });
-  // });
-
-  // window.addEventListener('scroll', () => {
-  //   let elem = document.getElementsByClassName('main');
-  //   let scrollY = window.scrollY/10;
-  //   elem.style.backgroundSize = 100 + scrollY + '%';
-  // });
-
-  // $(window).on('scroll', function() {
-  //   // console.log($(this).scrollTop())
-  //   //スクロール位置を取得
-  //   if ( $(this).scrollTop() > 60 ) {
-  //     // debugger
-  //     $('.main').fadeOut(1000, function() {
-  //       $(this).remove();
-  //     });
-  //   } else if ($(this).scrollTop() > 10) {
-  //     $(".main").css("font-size", `${$(this).scrollTop()/5}vw`)
-  //   }
-  // });
-
   let tabs = $(".tab"); // tabのクラスを全て取得し、変数tabsに配列で定義
-  $(".tab").on("click", () => { // tabをクリックしたらイベント発火
+  $(".tab").on("click", function() { // tabをクリックしたらイベント発火
     $(".is-active").removeClass("is-active"); // activeクラスを消す
-    debugger
     $(this).addClass("is-active"); // クリックした箇所にactiveクラスを追加
     const index = tabs.index(this); // クリックした箇所がタブの何番目か判定し、定数indexとして定義
     $(".tab-content").removeClass("is-show").eq(index).addClass("is-show"); // showクラスを消して、contentクラスのindex番目にshowクラスを追加
   });
 
   //テキストリンクをクリックしたら
-  $("#modal-open").click(() =>{
+  $("#modal-open").click(function() {
     //body内の最後に<div id="modal-bg"></div>を挿入
     $("body").append('<div id="modal-bg"></div>');
 
@@ -49,8 +19,8 @@ $(function() {
     $("#modal-bg,#modal-main").fadeIn("slow");
 
     //画面のどこかをクリックしたらモーダルを閉じる
-    $("#modal-bg,#modal-close").click(() =>{  
-      $("#modal-main,#modal-bg").fadeOut("slow", () =>{
+    $("#modal-bg,#modal-close").click(function(){  
+      $("#modal-main,#modal-bg").fadeOut("slow", function(){
       //挿入した<div id="modal-bg"></div>を削除
         $('#modal-bg').remove() ;
       });
@@ -90,5 +60,34 @@ $(function() {
   //   var position = target.offset().top;
   //   $("html, body").animate({scrollTop: position}, 550, "swing");
   //   return false;
+  // });
+
+  // window.addEventListener('load', function() {
+  //   const array = $("body")[0].children;
+  //   $.each(array,function(index,element){
+  //     // debugger
+  //     if (element.className !== "main") {
+  //       element.classList.add("d-none")
+  //     }
+  //   });
+  // });
+
+  // window.addEventListener('scroll', function() {
+  //   let elem = document.getElementsByClassName('main');
+  //   let scrollY = window.scrollY/10;
+  //   elem.style.backgroundSize = 100 + scrollY + '%';
+  // });
+
+  // $(window).on('scroll', function() {
+  //   // console.log($(this).scrollTop())
+  //   //スクロール位置を取得
+  //   if ( $(this).scrollTop() > 60 ) {
+  //     // debugger
+  //     $('.main').fadeOut(1000, function() {
+  //       $(this).remove();
+  //     });
+  //   } else if ($(this).scrollTop() > 10) {
+  //     $(".main").css("font-size", `${$(this).scrollTop()/5}vw`)
+  //   }
   // });
 });
