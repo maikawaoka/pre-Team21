@@ -61,7 +61,7 @@ header {
 *******************************************************************************/
 
 .tab-content {
-  height: 50vw;
+  height: 100vw;
   display: none;
   margin: 5vw 25vw;
 }
@@ -132,4 +132,42 @@ header {
   top:0;
   left:0;
   z-index: 1;
+}
+
+.arrow-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vw;
+  border: 2px solid;
+  border-radius: 25vw;
+  position: fixed;
+  bottom: 2vw;
+  right: 2vw;
+  opacity: 0;
+  transition: all 0.65s;
+}
+
+.arrow-up.active {
+  opacity: 1;
+  transition: all 0.65s;
+}
+
+.slider{
+  margin: 100px auto;
+  width: 80%;
+  opacity: 0;
+  transition: 3s;
+}
+.slick-initialized{
+  opacity: 1
+}
+.slider img{
+  height: auto;
+  width: 100%;
+}
+/*slick setting*/
+.slick-prev:before,
+.slick-next:before {
+  color: #000 !important;
 }

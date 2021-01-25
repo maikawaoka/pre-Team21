@@ -7,6 +7,24 @@ $(function() {
     $(".tab-content").removeClass("is-show").eq(index).addClass("is-show"); // showクラスを消して、contentクラスのindex番目にshowクラスを追加
   });
 
+  $(window).on('scroll', function() {
+    //スクロール位置を取得
+    if ( $(this).scrollTop() < 50 ) {
+      $('.arrow-up').removeClass('active');
+    } else {
+      $('.arrow-up').addClass('active');
+    }
+  });
+
+  //ページ内リンクスムーススクロール
+  $('a[href^="#"]').on('click', function () {
+    var href = $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $("html, body").animate({scrollTop: position}, 550, "swing");
+    return false;
+  });
+
   //テキストリンクをクリックしたら
   $("#modal-open").click(function() {
     //body内の最後に<div id="modal-bg"></div>を挿入
@@ -43,6 +61,39 @@ $(function() {
       });
     }
   });
+
+  $('.slider').slick({
+    centerMode: true,
+    centerPadding: '25%',
+    dots:true,
+    focusOnSelect:true,
+  });
+
+  // $('.slick01').slick({
+  //   centerMode: true,
+  //   centerPadding: '25%',
+  //   slidesToShow: 3,
+  //   responsive: [
+  //     {
+  //       breakpoint: 768,
+  //       settings: {
+  //         arrows: false,
+  //         centerMode: true,
+  //         centerPadding: '40px',
+  //         slidesToShow: 3
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 480,
+  //       settings: {
+  //         arrows: false,
+  //         centerMode: true,
+  //         centerPadding: '40px',
+  //         slidesToShow: 1
+  //       }
+  //     }
+  //   ]
+  // });
 
   // $(window).on('scroll', function() {
   //   //スクロール位置を取得
