@@ -34,40 +34,60 @@
       <div id="modal-open" class="filter-button">メンバーを絞り込む</div>
       <!-- modal -->
       <div id="modal-main">
-        <ul id="tags">
-          <li id="kanto">関東</li>
-        </ul>
         <button id="modal-close">閉じる</button>
+        <div class="tag-title">出身</div>
+        <ul class="tags">
+          <li class="birthplace" id="hokkaido">北海道</li>
+          <li class="birthplace" id="tohoku">東北</li>
+          <li class="birthplace" id="kanto">関東</li>
+          <li class="birthplace" id="chubu">中部</li>
+          <li class="birthplace" id="kinki">近畿</li>
+          <li class="birthplace" id="chugoku">中国</li>
+          <li class="birthplace" id="shikoku">四国</li>
+          <li class="birthplace" id="kyusyu">九州</li>
+        </ul>
+        <div class="tag-title">文理</div>
+        <ul class="tags">
+          <li class="bunri" id="bunkei">文系</li>
+          <li class="bunri" id="rikei">理系</li>
+        </ul>
+        <div class="tag-title">プログラミング経験</div>
+        <ul class="tags">
+          <li class="programing" id="ari">あり</li>
+          <li class="programing" id="nashi">なし</li>
+        </ul>
+        <button class="clear">条件をクリア</button>
+        <button class="sort">該当メンバーを見る</button>
       </div>
     </div>
     <div class="filter-result">
-      <a href="person/person01.html" class="member-img">
+      <a href="person/person01.html" class="member person-img kanto bunkei ari">
         <div class="person">
-          <p class="member-name">Taro</p>
+        <p class="member-name">Taro</p>
         </div>
         <img class="person-image" src="../image/person.png">
       </a>
-      <a href="person/person01.html" class="member-img">
+      <a href="person/person01.html" class="member person-img kinki bunkei nashi">
         <div class="person">
-          <p class="member-name">Taro</p>
+        <p class="member-name">Taro</p>
         </div>
         <img class="person-image" src="../image/person.png">
       </a>
-      <a href="person/person01.html" class="member-img">
+      <a href="person/person01.html" class="member person-img tohoku rikei ari">
         <div class="person">
-          <p class="member-name">Taro</p>
+        <p class="member-name">Taro</p>
         </div>
         <img class="person-image" src="../image/person.png">
       </a>
-      <a href="person/person01.html" class="member-img">
+      <a href="person/person01.html" class="member person-img kanto rikei ari">
         <div class="person">
-          <p class="member-name">Taro</p>
+        <p class="member-name">Taro</p>
         </div>
         <img class="person-image" src="../image/person.png">
       </a>
-      <a href="person/person01.html" class="member-img">
+      <a href="person/person01.html" class="member person-img kanto bunkei nashi">
         <div class="person">
-          <p class="member-name">Taro</p>
+        <p class="member-name">Taro</p>
         </div>
         <img class="person-image" src="../image/person.png">
       </a>
@@ -76,6 +96,68 @@
   <!-- team -->
   <div class="tab-content tab2">
     <div class="title">Team21Teams</div>
+    <div class="team-list">
+      <div class="team">
+        <img class="team-image" src="../image/person.png">
+        <a href="person/person01.html" class="go-details">
+          <img src="../image/arrow_up.png">
+        </a>
+        <div class="explaination">
+          <p class="team-name right">西日本</p>
+          <p class="description">△△で〇〇なチームです！</p>
+        </div>
+      </div>
+      <div class="team">
+        <div class="explaination">
+          <p class="team-name left">ぽんぽん本舗</p>
+          <p class="description">△△で〇〇なチームです！</p>
+        </div>
+        <img class="team-image" src="../image/person.png">
+        <a href="person/person01.html" class="go-details">
+          <img src="../image/arrow_up.png">
+        </a>
+      </div>
+      <div class="team">
+        <img class="team-image" src="../image/person.png">
+        <a href="person/person01.html" class="go-details">
+          <img src="../image/arrow_up.png">
+        </a>
+        <div class="explaination">
+          <p class="team-name right">Arcobaleno</p>
+          <p class="description">△△で〇〇なチームです！</p>
+        </div>
+      </div>
+      <div class="team">
+        <div class="explaination">
+          <p class="team-name left">Blueocean</p>
+          <p class="description">△△で〇〇なチームです！</p>
+        </div>
+        <img class="team-image" src="../image/person.png">
+        <a href="person/person01.html" class="go-details">
+          <img src="../image/arrow_up.png">
+        </a>
+      </div>
+      <div class="team">
+        <img class="team-image" src="../image/person.png">
+        <a href="person/person01.html" class="go-details">
+          <img src="../image/arrow_up.png">
+        </a>
+        <div class="explaination">
+          <p class="team-name right">きらきら星</p>
+          <p class="description">△△で〇〇なチームです！</p>
+        </div>
+      </div>
+      <div class="team">
+        <div class="explaination">
+          <p class="team-name left">世界進出</p>
+          <p class="description">△△で〇〇なチームです！</p>
+        </div>
+        <img class="team-image" src="../image/person.png">
+        <a href="person/person01.html" class="go-details">
+          <img src="../image/arrow_up.png">
+        </a>
+      </div>
+    </div>
     <ul class="slider">
       <li><a href="#"><img src="../image/person.png" alt="image01"></a></li>
       <li><a href="#"><img src="../image/person.png" alt="image02"></a></li>

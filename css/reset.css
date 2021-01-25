@@ -46,6 +46,10 @@ nav,ul,li {
   list-style:none;
 }
 
+ul {
+  display: flex;
+}
+
 blockquote, q {
   quotes:none;
 }
