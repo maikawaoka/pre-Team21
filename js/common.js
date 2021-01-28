@@ -8,9 +8,11 @@ $(function() {
     programing: ""
   }
 
+
   $('.tags > li').on('click',function(){
     if($(this).is('.is-selected')) {
       $(this).removeClass('is-selected');
+      unselect();
     } else if($(this).is('.birthplace')) {
       $(this).addClass('is-selected');
       rule.birthplace.push($(this).attr('id'));
@@ -24,6 +26,17 @@ $(function() {
       rule.programing = $(this).attr('id');
     }
   });
+
+  function unselect() {
+    $(this).removeClass('is-selected');
+    if($(this).is('.birthplace')) {
+      rule.birthplace = rule.birthplace.filter(id => id != $(this).attr('id'));
+    } else if($(this).is('.bunri')) {
+      rule.bunri = "";
+    } else {
+      rule.bunri = "";
+    }
+  };
 
   // 条件クリア
   $('.clear').on('click',function(){
@@ -80,7 +93,7 @@ $(function() {
   });
 
   //テキストリンクをクリックしたら
-  $("#modal-open").click(function() {
+  $(".modal-open").click(function() {
     //body内の最後に<div id="modal-bg"></div>を挿入
     $("body").append('<div id="modal-bg"></div>');
 
@@ -157,7 +170,7 @@ $(function() {
   //   }
   // });
 
-  // //ページ内リンクスムーススクロール
+  //ページ内リンクスムーススクロール
   // $('a[href^="#"]').on('click', function () {
   //   var href = $(this).attr("href");
   //   var target = $(href == "#" || href == "" ? 'html' : href);
@@ -168,30 +181,30 @@ $(function() {
 
   // window.addEventListener('load', function() {
   //   const array = $("body")[0].children;
+  //   console.log(array);
   //   $.each(array,function(index,element){
-  //     // debugger
-  //     if (element.className !== "main") {
+  //     if (element.className !== "main,aaa") {
   //       element.classList.add("d-none")
   //     }
   //   });
   // });
 
-  // window.addEventListener('scroll', function() {
-  //   let elem = document.getElementsByClassName('main');
-  //   let scrollY = window.scrollY/10;
-  //   elem.style.backgroundSize = 100 + scrollY + '%';
-  // });
+  window.addEventListener('scroll', function() {
+    let elem = document.getElementsByClassName('main');
+    let scrollY = window.scrollY/10;
+    elem.style.backgroundSize = 100 + scrollY + '%';
+  });
 
-  // $(window).on('scroll', function() {
-  //   // console.log($(this).scrollTop())
-  //   //スクロール位置を取得
-  //   if ( $(this).scrollTop() > 60 ) {
-  //     // debugger
-  //     $('.main').fadeOut(1000, function() {
-  //       $(this).remove();
-  //     });
-  //   } else if ($(this).scrollTop() > 10) {
-  //     $(".main").css("font-size", `${$(this).scrollTop()/5}vw`)
-  //   }
-  // });
+  $(window).on('scroll', function() {
+    // console.log($(this).scrollTop())
+    //スクロール位置を取得
+    if ( $(this).scrollTop() > 60 ) {
+      $('.main').fadeOut(1000, function() {
+        $(this).remove();
+        $('.aaa').remove();
+      });
+    } else if ($(this).scrollTop() > 10) {
+      $(".main").css("font-size", `${$(this).scrollTop()/5}vw`)
+    }
+  });
 });

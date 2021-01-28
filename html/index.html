@@ -8,6 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>内定者紹介サイト ｜ シアトルコンサルティング株式会社</title>
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjp.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" type="text/css" href="../css/slick.css"/>
@@ -15,7 +16,12 @@
 </head>
 <body>
   <!-- header -->
+  <div class="main">
+    <img class="main-image" src="../image/main.png">
+  </div>
+  <div class="aaa"></div>
   <header>
+    <img class="header-image" src="../image/header.png">
     <!-- tab -->
     <div class="tab-area">
       <ul class="tab-group">
@@ -29,132 +35,301 @@
   <div class="tab-content is-show tab1">
     <!-- title -->
     <div class="title">Team21Members</div>
+      <div class="title-description">Team21のメンバー30人を紹介します！ </div>
     <!-- filter -->
     <div class="filter-area">
-      <div id="modal-open" class="filter-button">メンバーを絞り込む</div>
+      <div class="modal-open">
+        <img class="sort-icon" src="../image/sort.png">
+        <div class="sort-title">メンバーを絞り込む</div>
+      </div>
       <!-- modal -->
       <div id="modal-main">
-        <button id="modal-close">閉じる</button>
-        <div class="tag-title">出身</div>
-        <ul class="tags">
-          <li class="birthplace" id="hokkaido">北海道</li>
-          <li class="birthplace" id="tohoku">東北</li>
-          <li class="birthplace" id="kanto">関東</li>
-          <li class="birthplace" id="chubu">中部</li>
-          <li class="birthplace" id="kinki">近畿</li>
-          <li class="birthplace" id="chugoku">中国</li>
-          <li class="birthplace" id="shikoku">四国</li>
-          <li class="birthplace" id="kyusyu">九州</li>
-        </ul>
-        <div class="tag-title">文理</div>
-        <ul class="tags">
-          <li class="bunri" id="bunkei">文系</li>
-          <li class="bunri" id="rikei">理系</li>
-        </ul>
-        <div class="tag-title">プログラミング経験</div>
-        <ul class="tags">
-          <li class="programing" id="ari">あり</li>
-          <li class="programing" id="nashi">なし</li>
-        </ul>
-        <button class="clear">条件をクリア</button>
-        <button class="sort">該当メンバーを見る</button>
+        <img id="modal-close" src="../image/close.png"></img>
+          <div class="sort-contents"></div>
+            <div class="modal-title">メンバーを絞り込む</div>
+            <div class="tag-title">出身</div>
+            <ul class="tags">
+              <li class="birthplace" id="hokkaido">北海道</li>
+              <li class="birthplace" id="tohoku">東北</li>
+              <li class="birthplace" id="kanto">関東</li>
+              <li class="birthplace" id="chubu">中部</li>
+              <li class="birthplace" id="kinki">近畿</li>
+              <li class="birthplace" id="chugoku">中国</li>
+              <li class="birthplace" id="shikoku">四国</li>
+              <li class="birthplace" id="kyusyu">九州</li>
+            </ul>
+            <div class="tag-title">文理</div>
+            <ul class="tags">
+              <li class="bunri" id="bunkei">文系</li>
+              <li class="bunri" id="rikei">理系</li>
+            </ul>
+            <div class="tag-title">プログラミング経験</div>
+            <ul class="tags">
+              <li class="programing" id="ari">あり</li>
+              <li class="programing" id="nashi">なし</li>
+            </ul>
+            <div class ="buttons">
+              <button class="clear">条件をクリア</button>
+              <button class="sort">該当メンバーを見る</button>
+            </div>
+          </div>
       </div>
     </div>
     <div class="filter-result">
       <a href="person/person01.html" class="member person-img kanto bunkei ari">
         <div class="person">
-        <p class="member-name">Taro</p>
+          <img src="../image/person-ex1-hover.png">
+          <img src="../image/person-ex1.png">
         </div>
-        <img class="person-image" src="../image/person.png">
       </a>
       <a href="person/person01.html" class="member person-img kinki bunkei nashi">
         <div class="person">
-        <p class="member-name">Taro</p>
+          <img src="../image/person-ex2-hover.png">
+          <img src="../image/person-ex2.png">
         </div>
-        <img class="person-image" src="../image/person.png">
       </a>
       <a href="person/person01.html" class="member person-img tohoku rikei ari">
         <div class="person">
-        <p class="member-name">Taro</p>
+          <img src="../image/person-ex1-hover.png">
+          <img src="../image/person-ex1.png">
         </div>
-        <img class="person-image" src="../image/person.png">
       </a>
       <a href="person/person01.html" class="member person-img kanto rikei ari">
         <div class="person">
-        <p class="member-name">Taro</p>
+          <img src="../image/person-ex2-hover.png">
+          <img src="../image/person-ex2.png">
         </div>
-        <img class="person-image" src="../image/person.png">
-      </a>
-      <a href="person/person01.html" class="member person-img kanto bunkei nashi">
+      <a href="person/person01.html" class="member person-img kanto bunkei ari">
         <div class="person">
-        <p class="member-name">Taro</p>
+          <img src="../image/person-ex2-hover.png">
+          <img src="../image/person-ex2.png">
         </div>
-        <img class="person-image" src="../image/person.png">
+      </a>
+      <a href="person/person01.html" class="member person-img kinki bunkei nashi">
+        <div class="person">
+          <img src="../image/person-ex1-hover.png">
+          <img src="../image/person-ex1.png">
+        </div>
+      </a>
+      <a href="person/person01.html" class="member person-img tohoku rikei ari">
+        <div class="person">
+          <img src="../image/person-ex2-hover.png">
+          <img src="../image/person-ex2.png">
+        </div>
+      </a>
+      <a href="person/person01.html" class="member person-img kanto rikei ari">
+        <div class="person">
+          <img src="../image/person-ex1-hover.png">
+          <img src="../image/person-ex1.png">
+        </div>
+      </a>
+      <a href="person/person01.html" class="member person-img kanto bunkei ari">
+        <div class="person">
+          <img src="../image/person-ex1-hover.png">
+          <img src="../image/person-ex1.png">
+        </div>
+      </a>
+      <a href="person/person01.html" class="member person-img kinki bunkei nashi">
+        <div class="person">
+          <img src="../image/person-ex2-hover.png">
+          <img src="../image/person-ex2.png">
+        </div>
+      </a>
+      <a href="person/person01.html" class="member person-img tohoku rikei ari">
+        <div class="person">
+          <img src="../image/person-ex1-hover.png">
+          <img src="../image/person-ex1.png">
+        </div>
+      </a>
+      <a href="person/person01.html" class="member person-img kanto rikei ari">
+        <div class="person">
+          <img src="../image/person-ex2-hover.png">
+          <img src="../image/person-ex2.png">
+        </div>
+      <a href="person/person01.html" class="member person-img kanto bunkei ari">
+        <div class="person">
+          <img src="../image/person-ex2-hover.png">
+          <img src="../image/person-ex2.png">
+        </div>
+      </a>
+      <a href="person/person01.html" class="member person-img kinki bunkei nashi">
+        <div class="person">
+          <img src="../image/person-ex1-hover.png">
+          <img src="../image/person-ex1.png">
+        </div>
+      </a>
+      <a href="person/person01.html" class="member person-img tohoku rikei ari">
+        <div class="person">
+          <img src="../image/person-ex2-hover.png">
+          <img src="../image/person-ex2.png">
+        </div>
+      </a>
+      <a href="person/person01.html" class="member person-img kanto rikei ari">
+        <div class="person">
+          <img src="../image/person-ex1-hover.png">
+          <img src="../image/person-ex1.png">
+        </div>
+      </a>
+      <a href="person/person01.html" class="member person-img kanto bunkei ari">
+        <div class="person">
+          <img src="../image/person-ex1-hover.png">
+          <img src="../image/person-ex1.png">
+        </div>
+      </a>
+      <a href="person/person01.html" class="member person-img kinki bunkei nashi">
+        <div class="person">
+          <img src="../image/person-ex2-hover.png">
+          <img src="../image/person-ex2.png">
+        </div>
+      </a>
+      <a href="person/person01.html" class="member person-img tohoku rikei ari">
+        <div class="person">
+          <img src="../image/person-ex1-hover.png">
+          <img src="../image/person-ex1.png">
+        </div>
+      </a>
+      <a href="person/person01.html" class="member person-img kanto rikei ari">
+        <div class="person">
+          <img src="../image/person-ex2-hover.png">
+          <img src="../image/person-ex2.png">
+        </div>
+      <a href="person/person01.html" class="member person-img kanto bunkei ari">
+        <div class="person">
+          <img src="../image/person-ex2-hover.png">
+          <img src="../image/person-ex2.png">
+        </div>
+      </a>
+      <a href="person/person01.html" class="member person-img kinki bunkei nashi">
+        <div class="person">
+          <img src="../image/person-ex1-hover.png">
+          <img src="../image/person-ex1.png">
+        </div>
+      </a>
+      <a href="person/person01.html" class="member person-img tohoku rikei ari">
+        <div class="person">
+          <img src="../image/person-ex2-hover.png">
+          <img src="../image/person-ex2.png">
+        </div>
+      </a>
+      <a href="person/person01.html" class="member person-img kanto rikei ari">
+        <div class="person">
+          <img src="../image/person-ex1-hover.png">
+          <img src="../image/person-ex1.png">
+        </div>
+      </a>
+      <a href="person/person01.html" class="member person-img kanto bunkei ari">
+        <div class="person">
+          <img src="../image/person-ex1-hover.png">
+          <img src="../image/person-ex1.png">
+        </div>
+      </a>
+      <a href="person/person01.html" class="member person-img kinki bunkei nashi">
+        <div class="person">
+          <img src="../image/person-ex2-hover.png">
+          <img src="../image/person-ex2.png">
+        </div>
+      </a>
+      <a href="person/person01.html" class="member person-img tohoku rikei ari">
+        <div class="person">
+          <img src="../image/person-ex1-hover.png">
+          <img src="../image/person-ex1.png">
+        </div>
+      </a>
+      <a href="person/person01.html" class="member person-img kanto rikei ari">
+        <div class="person">
+          <img src="../image/person-ex2-hover.png">
+          <img src="../image/person-ex2.png">
+        </div>
+      <a href="person/person01.html" class="member person-img kanto bunkei ari">
+        <div class="person">
+          <img src="../image/person-ex2-hover.png">
+          <img src="../image/person-ex2.png">
+        </div>
+      </a>
+      <a href="person/person01.html" class="member person-img kinki bunkei nashi">
+        <div class="person">
+          <img src="../image/person-ex1-hover.png">
+          <img src="../image/person-ex1.png">
+        </div>
       </a>
     </div>
+    <div class="slider-contents">
+      <div class="explaination">他のチームを見る</div>
+      <ul class="slider">
+        <li><a href="#"><img src="../image/team-a.png" alt="image01"></a></li>
+        <li><a href="#"><img src="../image/team-a.png" alt="image02"></a></li>
+        <li><a href="#"><img src="../image/team-a.png" alt="image03"></a></li>
+        <li><a href="#"><img src="../image/team-a.png" alt="image04"></a></li>
+        <li><a href="#"><img src="../image/team-a.png" alt="image05"></a></li>
+        <li><a href="#"><img src="../image/team-a.png" alt="image06"></a></li>
+        <li><a href="#"><img src="../image/team-a.png" alt="image07"></a></li>
+        <li><a href="#"><img src="../image/team-a.png" alt="image08"></a></li>
+      </ul>
+    </div>
   </div>
+
   <!-- team -->
   <div class="tab-content tab2">
     <div class="title">Team21Teams</div>
     <div class="team-list">
-      <div class="team">
-        <img class="team-image" src="../image/person.png">
+      <div class="team left">
+        <img class="team-image" src="../image/team-a.png">
         <a href="person/person01.html" class="go-details">
-          <img src="../image/arrow_up.png">
+          <img class="go-image" src="../image/go-details.png">
         </a>
         <div class="explaination">
-          <p class="team-name right">西日本</p>
+          <p class="team-name">西日本</p>
           <p class="description">△△で〇〇なチームです！</p>
         </div>
       </div>
-      <div class="team">
+      <div class="team right">
         <div class="explaination">
-          <p class="team-name left">ぽんぽん本舗</p>
+          <p class="team-name">ぽんぽん本舗</p>
           <p class="description">△△で〇〇なチームです！</p>
         </div>
-        <img class="team-image" src="../image/person.png">
+        <img class="team-image" src="../image/team-a.png">
         <a href="person/person01.html" class="go-details">
-          <img src="../image/arrow_up.png">
+          <img class="go-image" src="../image/go-details.png">
         </a>
       </div>
-      <div class="team">
-        <img class="team-image" src="../image/person.png">
+      <div class="team left">
+        <img class="team-image" src="../image/team-a.png">
         <a href="person/person01.html" class="go-details">
-          <img src="../image/arrow_up.png">
+          <img class="go-image" src="../image/go-details.png">
         </a>
         <div class="explaination">
-          <p class="team-name right">Arcobaleno</p>
-          <p class="description">△△で〇〇なチームです！</p>
-        </div>
-      </div>
-      <div class="team">
-        <div class="explaination">
-          <p class="team-name left">Blueocean</p>
-          <p class="description">△△で〇〇なチームです！</p>
-        </div>
-        <img class="team-image" src="../image/person.png">
-        <a href="person/person01.html" class="go-details">
-          <img src="../image/arrow_up.png">
-        </a>
-      </div>
-      <div class="team">
-        <img class="team-image" src="../image/person.png">
-        <a href="person/person01.html" class="go-details">
-          <img src="../image/arrow_up.png">
-        </a>
-        <div class="explaination">
-          <p class="team-name right">きらきら星</p>
+          <p class="team-name">Arcobaleno</p>
           <p class="description">△△で〇〇なチームです！</p>
         </div>
       </div>
-      <div class="team">
+      <div class="team right">
         <div class="explaination">
-          <p class="team-name left">世界進出</p>
+          <p class="team-name">Blueocean</p>
           <p class="description">△△で〇〇なチームです！</p>
         </div>
-        <img class="team-image" src="../image/person.png">
+        <img class="team-image" src="../image/team-a.png">
         <a href="person/person01.html" class="go-details">
-          <img src="../image/arrow_up.png">
+          <img class="go-image" src="../image/go-details.png">
+        </a>
+      </div>
+      <div class="team left">
+        <img class="team-image" src="../image/team-a.png">
+        <a href="person/person01.html" class="go-details">
+          <img class="go-image" src="../image/go-details.png">
+        </a>
+        <div class="explaination">
+          <p class="team-name">きらきら星</p>
+          <p class="description">△△で〇〇なチームです！</p>
+        </div>
+      </div>
+      <div class="team right">
+        <div class="explaination">
+          <p class="team-name">世界進出</p>
+          <p class="description">△△で〇〇なチームです！</p>
+        </div>
+        <img class="team-image" src="../image/team-a.png">
+        <a href="person/person01.html" class="go-details">
+          <img class="go-image" src="../image/go-details.png">
         </a>
       </div>
     </div>
@@ -174,10 +349,10 @@
     <div class="title">Team21Data</div>
   </div>
   <a href="#" class="arrow-up">
-    <img src="../image/arrow_up.png">
+    <img class ="arrow-up-img" src="../image/arrow-up.png">
   </a>
   <!-- footer -->
-  <footer>footer</footer>
+  <footer>Copyright © 2021 Team19. All Rights Reserved.</footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="../js/slick.min.js"></script>
   <script src="../js/common.js"></script>
