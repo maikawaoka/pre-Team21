@@ -171,14 +171,15 @@ header {
   display: flex!important;
 }
 
-li {
+.tags > li {
   margin: 0.6vw 0.2vw;
   padding: 0.5vw 1vw;
   border: solid 1px #EDEDED;
   border-radius: 4vw;
   font-size: 15px;
 }
-li.is-selected {
+
+.tags > li.is-selected {
   border: solid 1px rgb(198, 10, 10);
 }
 
@@ -213,21 +214,38 @@ li.is-selected {
   transition: all 0.65s;
 }
 
-.slider{
+/******************************************************************************
+  slider
+*******************************************************************************/
+
+.slider {
+  width: 50%;
   margin: 100px auto;
-  width: 80%;
-  opacity: 0;
-  transition: 3s;
 }
-.slick-initialized{
-  opacity: 1
+
+.slick-slide {
+  margin: 0px 20px;
 }
-.slider img{
-  height: auto;
+
+.slick-slide img {
   width: 100%;
 }
-/*slick setting*/
+
 .slick-prev:before,
 .slick-next:before {
-  color: #000 !important;
+  color: black;
+}
+
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
 }
