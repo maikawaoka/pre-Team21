@@ -1,4 +1,4 @@
-$(document).on('ready', function() {
+$(function() {
 /******************************************************************************
   member
   *******************************************************************************/
@@ -116,25 +116,11 @@ $(document).on('ready', function() {
     }
   });
 
-  $(".center").slick({
-    infinite: true,
+  $('.slider').slick({
     centerMode: true,
-    slidesToShow: 3,
-    slidesToScroll: 3
+    centerPadding: '25%',
+    focusOnSelect:true,
   });
-
-  // $('.slider').slick({
-  //   centerMode: true,
-  //   slidesToShow: 3,
-  //   responsive: [{
-  //     breakpoint: 768,
-  //     settings: {
-  //       slidesToShow: 1,
-  //       centerPadding: 0,
-  //       fade: true
-  //     }
-  //   }]
-  // });
 
   // $('.slick01').slick({
   //   centerMode: true,
