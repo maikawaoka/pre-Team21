@@ -1,17 +1,27 @@
 /******************************************************************************
+  main
+*******************************************************************************/
+.aaa {
+  height: 1000vh;
+}
+
+.main-image {
+  width: 98%;
+  margin-left: 1vw;
+}
+
+/******************************************************************************
   header
 *******************************************************************************/
 
-header {
-  height: 15vw;
-  background-color: rgb(120, 170, 245);
-  position: relative;
+.header-image {
+  width: 100%;
 }
 
 .tab-area {
-  bottom: 0;
+  top: 0;
   position: absolute;
-  left: 0;
+  right: 1vw;
 }
 
 .tab-group {
@@ -23,16 +33,17 @@ header {
   justify-content: center;
   width: calc(100% / 3);
   cursor: pointer;
-  border: 0.1vw solid rgb(83, 86, 250);
+  border: 0.1vw solid #67bcf7;
   border-bottom: none;
   border-radius: 1vw 1vw 0 0;
   padding: 0.5vw 2vw;
   color: white;
-  background: rgb(83, 86, 250);
+  font-family: 'ヒラギノ丸ゴ ProN', sans-serif;
+  background: #67bcf7;
 }
 
 .tab.is-active {
-  color: rgb(83, 86, 250);
+  color: #158bde;
   background: white;
 }
 
@@ -43,7 +54,7 @@ header {
 .tab-content {
   height: 100%;
   display: none;
-  margin: 5vw 25vw;
+  margin: 5vw 20vw;
 }
 
 .tab-content.is-show {
@@ -53,15 +64,21 @@ header {
 .tab-content .title {
   display: flex;
   justify-content: center;
-  font-size: 2vw;
-  color: rgb(83, 86, 250);
+  font-size: 2.5vw;
+  color: #158bde;
+  font-family: 'ヒラギノ丸ゴ ProN', sans-serif;
+}
+.title-description {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2vw;
+  color: #000;
+  margin: 1.5vw;
 }
 
 /******************************************************************************
   member
 *******************************************************************************/
-
-
 .filter-area {
   display: flex;
   justify-content: center;
@@ -75,15 +92,95 @@ header {
 }
 
 .filter-result {
+  margin: 0 18vw;
   margin-top: 5vw;
-  gap: 10px;
+  gap: 1.5vw;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 220px);
+  grid-template-columns: repeat(auto-fill, 13vw);
+}
+
+.member {
+  width: 10vw;
 }
 
 .person-image {
   width: 10vw;
-  border-radius: 25vw;
+}
+
+.person {
+  position: relative;
+	width: 200px;
+	height: 240px;
+	border-radius: 12px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.person img {
+  width: 10vw;
+  position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	display: block;
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+}
+
+.person:hover img:nth-of-type(1) {
+  width: 13vw;
+}
+
+/* .person img:nth-of-type(1) {
+  width: 6vw;
+  opacity: 0;
+} */
+
+.person:hover img:nth-of-type(2) {
+  width: 5vw;
+  opacity: 0;
+}
+
+/* slider */
+.slider-contents {
+  height: 21vw;
+  margin-top: 5vw;
+  background: #EFEFEF 0% 0% no-repeat padding-box;
+}
+
+.slider-contents .explaination {
+  padding-top: 2vw;
+  border-bottom: 2px solid #158bde;
+  width: 10vw;
+  margin: auto;
+}
+
+
+
+.slider.slick-initialized.slick-slider {
+  width: 33vw;
+  margin-top: 1vw;
+}
+
+.slick-slide img {
+  width: 9vw;
+}
+
+.slick-initialized .slick-slide {
+  border: none;
+  display: block;
+  width: 11vw !important;
+  display: block;
+}
+
+.slick-prev.slick-arrow {
+  content: '←';
+  width: 1vw;
+}
+
+.slick-next.slick-arrow {
+  content: '←';
+  width: 1vw;
 }
 
 /******************************************************************************
@@ -94,30 +191,103 @@ header {
   position: relative;
 }
 
-.go-details {
+.team.left .go-details {
   margin-top: 16vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8vw;
+  background: #158bde;
+  border-radius: 25vw;
+  height: 3.5vw;
+  position: absolute;
+  left: 25vw;
+  top: 3vw;
+}
+
+.team.right .go-details {
+  margin-top: 16vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8vw;
+  background: #158bde;
+  border-radius: 25vw;
+  height: 3.5vw;
+  position: absolute;
+  right: 7vw;
+  top: 2vw;
+}
+
+.go-image {
+  width: 2vw
 }
 
 .team-image {
-  width: 20vw;
+  width: 36vw;
   border-radius: 25vw;
 }
 
-.explaination {
+.team.left .explaination {
   width: 30vw;
-  padding-top: 5vw;
-  margin: 0 5vw!important;
+  margin-right: 6vw;
+  padding-top: 15vw;
   text-align: center;
   height: 10vw;
+}
+
+.team.right .explaination {
+  width: 30vw;
+  margin-left: 6vw;
+  padding-top: 15vw;
+  text-align: center;
+  height: 10vw;
+}
+
+.team-name {
+  font-size: 1.6vw;
+  color: #158bde;
+  font-family: 'ヒラギノ丸ゴ ProN', sans-serif;
 }
 
 .description {
   margin-top: 1vw;
 }
 
-.team-image.right {
+.team.left .explaination .team-image {
   display: inline-block;
-  margin-left: 10vw!important;
+  margin-left: 10vw !important;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1vw
+}
+
+.clear {
+  color: #FFF;
+  font-family: 'ヒラギノ丸ゴ ProN', sans-serif;
+  background: #9a9a9a 0% 0% no-repeat padding-box;
+  border: 3px solid #9a9a9a;
+  border-radius: 50px;
+  opacity: 1;
+  height: 3vw;
+  width: 11vw;
+  font-size: 1.2vw;
+}
+
+.sort {
+  color: #FFF;
+  font-family: 'ヒラギノ丸ゴ ProN', sans-serif;
+  background: #158bde 0% 0% no-repeat padding-box;
+  border: 3px solid #158bde;
+  border-radius: 50px;
+  opacity: 1;
+  height: 3vw;
+  width: 14vw;
+  font-size: 1.2vw;
+  margin-left: 0.5vw;
 }
 
 /******************************************************************************
@@ -143,18 +313,36 @@ header {
   display: none !important;
 }
 
-#modal-open {
-  color: #cc0000;
+.modal-open {
+  display: flex;
+  color: #158bde;
+  font-family: 'ヒラギノ丸ゴ ProN', sans-serif;
+  width: 16vw;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  justify-content: center;
+  padding: 0.3vw;
+  border: 2px solid #158BDE;
+  border-radius: 24px;
+  opacity: 1;
+}
+
+.sort-icon {
+  width: 2vw;
+}
+
+.sort-title {
+  line-height: 2vw;
 }
 
 /* モーダル コンテンツエリア */
 #modal-main {
   display: none;
   width: 50vw;
-  height: 30vw;
+  height: 33vw;
+  border: 3px solid #158bde;
   border-radius: 1vw;
   margin: 0;
-  padding: 1vw;
+  padding: 1.5vw;
   background-color: #ffffff;
   color: #666666;
   font-size: 15px;
@@ -162,35 +350,52 @@ header {
   z-index: 2;
 }
 
+.modal-title {
+  display: flex;
+  width: 39vw;
+  justify-content: center;
+  font-size: 1.5vw;
+  color: #158bde;
+  font-family: 'ヒラギノ丸ゴ ProN', sans-serif;
+}
+
+.sort-contents {
+}
+
 .tag-title {
-  background: #EDEDED;
+  background: #ededed;
   border-radius: 0.5vw;
+  margin-top: 2vw;
+  padding-left: 1vw;
+  width: 39vw;
+  height: 2vw;
+  line-height: 2vw;
 }
 
 .tags {
-  display: flex!important;
+  display: flex !important;
 }
 
 li {
   margin: 0.6vw 0.2vw;
   padding: 0.5vw 1vw;
-  border: solid 1px #EDEDED;
+  border: solid 2px #ededed;
   border-radius: 4vw;
   font-size: 15px;
 }
 li.is-selected {
-  border: solid 1px rgb(198, 10, 10);
+  border: solid 2px #158bde;
 }
 
 /* モーダル 背景エリア */
 #modal-bg {
-  display:none;
-  width:100%;
-  height:100%;
-  background-color: rgba(0,0,0,0.5);
-  position:fixed;
-  top:0;
-  left:0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 1;
 }
 
@@ -198,14 +403,18 @@ li.is-selected {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1vw;
-  border: 2px solid;
+  padding: 0.8vw;
+  border: 3px solid #158bde;
   border-radius: 25vw;
   position: fixed;
-  bottom: 2vw;
+  bottom: 8vw;
   right: 2vw;
   opacity: 0;
   transition: all 0.65s;
+}
+
+.arrow-up-img {
+  width: 1.8vw;
 }
 
 .arrow-up.active {
@@ -213,16 +422,16 @@ li.is-selected {
   transition: all 0.65s;
 }
 
-.slider{
+.slider {
   margin: 100px auto;
   width: 80%;
   opacity: 0;
   transition: 3s;
 }
-.slick-initialized{
-  opacity: 1
+.slick-initialized {
+  opacity: 1;
 }
-.slider img{
+.slider img {
   height: auto;
   width: 100%;
 }
@@ -230,4 +439,19 @@ li.is-selected {
 .slick-prev:before,
 .slick-next:before {
   color: #000 !important;
+}
+
+/******************************************************************************
+  header
+*******************************************************************************/
+
+footer {
+  background: #158bde;
+  height: 5vw;
+  margin-top: 15vw;
+  line-height: 5vw;
+  color: #fff;
+  font-family: 'ヒラギノ丸ゴ ProN', sans-serif;
+  font-size: 13px;
+  text-align: center;
 }
