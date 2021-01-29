@@ -171,15 +171,14 @@ header {
   display: flex!important;
 }
 
-.tags > li {
+li {
   margin: 0.6vw 0.2vw;
   padding: 0.5vw 1vw;
   border: solid 1px #EDEDED;
   border-radius: 4vw;
   font-size: 15px;
 }
-
-.tags > li.is-selected {
+li.is-selected {
   border: solid 1px rgb(198, 10, 10);
 }
 
@@ -214,38 +213,21 @@ header {
   transition: all 0.65s;
 }
 
-/******************************************************************************
-  slider
-*******************************************************************************/
-
-.slider {
-  width: 50%;
+.slider{
   margin: 100px auto;
+  width: 80%;
+  opacity: 0;
+  transition: 3s;
 }
-
-.slick-slide {
-  margin: 0px 20px;
+.slick-initialized{
+  opacity: 1
 }
-
-.slick-slide img {
+.slider img{
+  height: auto;
   width: 100%;
 }
-
+/*slick setting*/
 .slick-prev:before,
 .slick-next:before {
-  color: black;
-}
-
-
-.slick-slide {
-  transition: all ease-in-out .3s;
-  opacity: .2;
-}
-
-.slick-active {
-  opacity: .5;
-}
-
-.slick-current {
-  opacity: 1;
+  color: #000 !important;
 }
