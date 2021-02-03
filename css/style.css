@@ -453,3 +453,50 @@ footer {
 /******************************************************************************
   member detail
 *******************************************************************************/
+
+.person-img-area{
+  width: 42%;
+  display: block;
+  text-align: right;
+  border: solid;
+  margin-top: 12%;
+}
+
+.person-text-area{
+  color:#000;
+  position: absolute;
+  top: 40%;
+  left: 43%;
+  width: 30%;
+  border: solid;  
+}
+
+.person-text-area h1{
+  font-size: 15px;
+  font-weight: 100;
+  margin-bottom: 10;
+  font-family: unset;
+}
+
+.name-en{
+  font-size: 50px;
+  font-weight: 100;
+  margin-bottom: 30;
+  font-family: unset;
+}
+
+.list-area dl{
+  line-height: 2;
+}
+
+.list-area dt{
+  float: left;
+}
+
+.list-area dt::after{
+  content: ":";
+}
+
+.list-area dd{
+  margin-left: 180px;
+}
