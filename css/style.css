@@ -19,6 +19,8 @@
 }
 
 .tab-area {
+  display: flex;
+  justify-content: space-between;
   top: 0;
   position: absolute;
   right: 1vw;
@@ -59,11 +61,8 @@
 }
 
 .tab {
-  display: flex;
   justify-content: center;
-  width: calc(100% / 3);
   cursor: pointer;
-  border: 0.1vw solid #67bcf7;
   border-bottom: none;
   width: 11vw;
   padding: 0 2vw;
