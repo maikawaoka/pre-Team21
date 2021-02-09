@@ -19,32 +19,77 @@
 }
 
 .tab-area {
+  display: flex;
+  justify-content: space-between;
   top: 0;
   position: absolute;
   right: 1vw;
+  width: 100%;
+  color: #158bde;
+  background: rgb(255, 255, 255, 0.8);
+  font-family: 'ヒラギノ丸ゴ ProN', sans-serif;
+  height: 5vw;
+  position: fixed;
+  z-index: 100;
 }
 
 .tab-group {
-  display: flex;
+  position: absolute;
+  right: 0;
+  line-height: 4vw;
+}
+
+.tab-group {
+  position: absolute;
+  right: 0;
+  line-height: 4.5vw;
+}
+
+.tab-en-group {
+  position: absolute;
+  right: 0;
+  line-height: 7vw;
+}
+
+.tab-title {
+  position: relative;
+  justify-content: center;
+  line-height: 5vw;
+  cursor: pointer;
+  border-bottom: none;
+  padding-left: 2vw;
 }
 
 .tab {
-  display: flex;
   justify-content: center;
-  width: calc(100% / 3);
   cursor: pointer;
-  border: 0.1vw solid #67bcf7;
   border-bottom: none;
-  border-radius: 1vw 1vw 0 0;
-  padding: 0.5vw 2vw;
-  color: white;
-  font-family: 'ヒラギノ丸ゴ ProN', sans-serif;
-  background: #67bcf7;
+  width: 11vw;
+  padding: 0 2vw;
+  margin-right: auto;
+  text-align: center;
+}
+
+.tab-en {
+  justify-content: center;
+  cursor: pointer;
+  border-bottom: none;
+  width: 11vw;
+  padding: 0.3vw 2vw 0 2vw;
+  margin-right: auto;
+  text-align: center;
+  font-size: 0.9vw;
+}
+
+.tab:nth-of-type(4) {
+  height: 5vw;
+  background: #F7F393;
 }
 
 .tab.is-active {
   color: #158bde;
-  background: white;
+  height: 5vw;
+  background: #FFF;
 }
 
 /******************************************************************************
