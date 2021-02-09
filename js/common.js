@@ -73,7 +73,6 @@ $(document).on('ready', function() {
     $(".tab-content").removeClass("is-show").eq(index).addClass("is-show"); // showクラスを消して、contentクラスのindex番目にshowクラスを追加
   });
 
-
   $(window).on('scroll', function() {
     //スクロール位置を取得
     if ( $(this).scrollTop() < 50 ) {

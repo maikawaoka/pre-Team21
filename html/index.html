@@ -24,17 +24,26 @@
     <img class="header-image" src="../image/header.png">
     <!-- tab -->
     <div class="tab-area">
-      <ul class="tab-group">
-        <li id="tab1" class="tab is-active">Member</li>
-        <li id="tab2" class="tab">Team</li>
-        <li id="tab3" class="tab">Data</li>
-      </ul>
+      <span class="tab-title">SeattleConsulting 2021年度内定者紹介サイト</span>
+        <ul class="tab-group">
+          <li id="tab1" class="tab is-active">メンバー紹介</li>
+          <li id="tab2" class="tab">チーム紹介</li>
+          <li id="tab3" class="tab">21データ</li>
+          <li id="tab4" class="tab">エントリー</li>
+        </ul>
+        <!-- 0210タブ切り替えられなくなるのでコメントアウト -->
+        <!-- <ul class="tab-en-group">
+          <li class="tab-en ">Member</li>
+          <li class="tab-en">Team</li>
+          <li class="tab-en">Data</li>
+          <li class="tab-en">Entry</li>
+        </ul> -->
     </div>
   </header>
   <!-- member -->
   <div class="tab-content is-show tab1">
     <!-- title -->
-    <div class="title">Team21Members</div>
+    <div class="title">メンバー紹介</div>
     <div class="title-description">Team21のメンバー30人を紹介します！</div>
     <!-- filter -->
     <div class="filter-area">
@@ -77,7 +86,8 @@
     <div class="filter-result">
       <a href="person/person01.html" class="member person-img kanto bunkei ari">
         <div class="person">
-          <img src="../image/person-ex1-hover.png">
+          <!-- 0210 person-hoverをデフォルト表示オフにする-->
+          <img team-hover src="../image/person-ex1-hover.png">
           <img src="../image/person-ex1.png">
         </div>
       </a>
@@ -280,11 +290,13 @@
 
   <!-- team -->
   <div class="tab-content tab2">
-    <div class="title">Team21Teams</div>
+    <!-- 0210謎の青線を消す -->
+    <div class="title">チーム紹介</div>
+    <div class="title-description">Team20が内定者研修についてTeam21にインタビューしました！</div>
     <div class="team-list">
       <div class="team left">
         <img class="team-image" src="../image/team-a.png">
-        <a href="person/person01.html" class="go-details">
+        <a href="person/team01.html" class="go-details">
           <img class="go-image" src="../image/go-details.png">
         </a>
         <div class="explaination">
@@ -298,13 +310,13 @@
           <p class="description">△△で〇〇なチームです！</p>
         </div>
         <img class="team-image" src="../image/team-a.png">
-        <a href="person/person01.html" class="go-details">
+        <a href="person/team02.html" class="go-details">
           <img class="go-image" src="../image/go-details.png">
         </a>
       </div>
       <div class="team left">
         <img class="team-image" src="../image/team-a.png">
-        <a href="person/person01.html" class="go-details">
+        <a href="person/team03.html" class="go-details">
           <img class="go-image" src="../image/go-details.png">
         </a>
         <div class="explaination">
@@ -318,13 +330,13 @@
           <p class="description">△△で〇〇なチームです！</p>
         </div>
         <img class="team-image" src="../image/team-a.png">
-        <a href="person/person01.html" class="go-details">
+        <a href="person/team04.html" class="go-details">
           <img class="go-image" src="../image/go-details.png">
         </a>
       </div>
       <div class="team left">
         <img class="team-image" src="../image/team-a.png">
-        <a href="person/person01.html" class="go-details">
+        <a href="person/team05.html" class="go-details">
           <img class="go-image" src="../image/go-details.png">
         </a>
         <div class="explaination">
@@ -338,7 +350,7 @@
           <p class="description">△△で〇〇なチームです！</p>
         </div>
         <img class="team-image" src="../image/team-a.png">
-        <a href="person/person01.html" class="go-details">
+        <a href="person/team06.html" class="go-details">
           <img class="go-image" src="../image/go-details.png">
         </a>
       </div>
@@ -387,7 +399,51 @@
   </div>
   <!-- data -->
   <div class="tab-content tab3">
-    <div class="title">Team21Data</div>
+    <div class="title">21データ</div>
+    <div class="title-description">今年の内定者チームの情報です。</div>
+    <!-- grid使う -->
+    <div class="grid-container">
+      <div class="grid-title">出身</div>
+      <div class="grid-contents">
+        <img class="" src=""></div>
+        <span class="birthplace"></div>
+        <span class="count"></div>
+      </div>
+      <div class="comment">日本全国からいろんな方が集まっています。</div>
+    </div>
+    <div class="grid-container">
+      <div class="grid-title">文理</div>
+      <div class="grid-contents">
+        <img class=""></div>
+        <span class=""></div>
+      </div>
+      <div class="comment">エンジニアは理系のイメージが強いと思いますが、シアトルは文系出身も多く入社します！</div>
+    </div>
+    <div class="grid-container">
+      <div class="grid-title">プログラミング経験</div>
+      <div class="grid-contents">
+        <img class=""></div>
+        <span class=""></div>
+      </div>
+      <div class="comment">ほとんどが未経験のメンバーです！一緒に成長していこう！</div>
+    </div>
+    <div class="grid-container">
+      <div class="grid-title">男女比</div>
+      <div class="grid-contents">
+        <img class=""></div>
+        <span class=""></div>
+      </div>
+      <div class="comment">男女比は4:6です。今年は女性が多いですね！</div>
+    <div class="grid-container">
+      <div class="grid-title">
+        <div class="grid-title">内定者出身校一覧</div>
+        <div class="grid-sub-title">(五十音順)</div>
+      </div>
+      <div class="grid-contents">
+        <img class=""></div>
+        <span class=""></div>
+      </div>
+    </div>
   </div>
   <a href="#" class="arrow-up">
     <img class ="arrow-up-img" src="../image/arrow-up.png">

@@ -22,10 +22,40 @@
   top: 0;
   position: absolute;
   right: 1vw;
+  width: 100%;
+  color: #158bde;
+  background: rgb(255, 255, 255, 0.8);
+  font-family: 'ヒラギノ丸ゴ ProN', sans-serif;
+  height: 5.5vw;
+  position: fixed;
+  z-index: 100;
 }
 
 .tab-group {
-  display: flex;
+  position: absolute;
+  right: 0;
+  line-height: 4vw;
+}
+
+.tab-group {
+  position: absolute;
+  right: 0;
+  line-height: 4vw;
+}
+
+.tab-en-group {
+  position: absolute;
+  right: 0;
+  line-height: 6.5vw;
+}
+
+.tab-title {
+  position: relative;
+  justify-content: center;
+  line-height: 5vw;
+  cursor: pointer;
+  border-bottom: none;
+  padding-left: 2vw;
 }
 
 .tab {
@@ -35,16 +65,32 @@
   cursor: pointer;
   border: 0.1vw solid #67bcf7;
   border-bottom: none;
-  border-radius: 1vw 1vw 0 0;
-  padding: 0.5vw 2vw;
-  color: white;
-  font-family: 'ヒラギノ丸ゴ ProN', sans-serif;
-  background: #67bcf7;
+  width: 11vw;
+  padding: 0 2vw;
+  margin-right: auto;
+  text-align: center;
+}
+
+.tab-en {
+  justify-content: center;
+  cursor: pointer;
+  border-bottom: none;
+  width: 11vw;
+  padding: 0.3vw 2vw 0 2vw;
+  margin-right: auto;
+  text-align: center;
+  font-size: 0.9vw;
+}
+
+.tab:nth-of-type(4) {
+  height: 5.5vw;
+  background: #F7F393;
 }
 
 .tab.is-active {
   color: #158bde;
-  background: white;
+  height: 5.5vw;
+  background: #FFF;
 }
 
 /******************************************************************************
@@ -52,9 +98,21 @@
 *******************************************************************************/
 
 .tab-content {
-  width: 100%;
   height: 100%;
   display: none;
+}
+
+.tab-content.tab1 {
+  width: 100%;
+  margin: 5vw auto;
+}
+
+.tab-content.tab2 {
+  margin: 5vw 20vw;
+}
+
+.tab-content.tab3 {
+  width: 100%;
   margin: 5vw auto;
 }
 
@@ -240,6 +298,7 @@
 
 .clear {
   color: #FFF;
+  cursor: pointer;
   font-family: 'ヒラギノ丸ゴ ProN', sans-serif;
   background: #9a9a9a 0% 0% no-repeat padding-box;
   border: 3px solid #9a9a9a;
@@ -252,6 +311,7 @@
 
 .sort {
   color: #FFF;
+  cursor: pointer;
   font-family: 'ヒラギノ丸ゴ ProN', sans-serif;
   background: #158bde 0% 0% no-repeat padding-box;
   border: 3px solid #158bde;
@@ -262,6 +322,11 @@
   font-size: 1.2vw;
   margin-left: 0.5vw;
 }
+
+/******************************************************************************
+  team
+*******************************************************************************/
+
 
 /******************************************************************************
   common
@@ -287,6 +352,7 @@
 }
 
 .modal-open {
+  cursor: pointer;
   display: flex;
   color: #158bde;
   font-family: 'ヒラギノ丸ゴ ProN', sans-serif;
@@ -310,17 +376,21 @@
 /* モーダル コンテンツエリア */
 #modal-main {
   display: none;
-  width: 50vw;
+  width: 43.7vw;
   height: 33vw;
   border: 3px solid #158bde;
   border-radius: 1vw;
   margin: 0;
-  padding: 1.5vw;
+  padding: 1.8vw;
   background-color: #ffffff;
   color: #666666;
   font-size: 15px;
   position: fixed;
   z-index: 2;
+}
+
+img#modal-close {
+  cursor: pointer;
 }
 
 .modal-title {
@@ -340,7 +410,7 @@
   border-radius: 0.5vw;
   margin-top: 2vw;
   padding-left: 1vw;
-  width: 39vw;
+  width: 39.8vw;
   height: 2vw;
   line-height: 2vw;
 }
@@ -350,6 +420,7 @@
 }
 
 .tags > li {
+  cursor: pointer;
   margin: 0.6vw 0.2vw;
   padding: 0.5vw 1vw;
   border: solid 2px #ededed;
@@ -358,7 +429,7 @@
 }
 
 .tags > li.is-selected {
-  border: solid 1px rgb(198, 10, 10);
+  border: solid 2px #158bde;
 }
 
 /* モーダル 背景エリア */
@@ -445,7 +516,7 @@ footer {
   font-family: 'ヒラギノ丸ゴ ProN', sans-serif;
   font-size: 13px;
   text-align: center;
-  color: black;
+  color: #fff;
 }
 
 
