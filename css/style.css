@@ -453,19 +453,22 @@ footer {
 /******************************************************************************
   member detail
 *******************************************************************************/
+.details-mv{
+  position: relative;
+  border: solid red;
+}
 
 .person-img-area{
   width: 42%;
   display: block;
   text-align: right;
   border: solid;
-  margin-top: 12%;
 }
 
 .person-text-area{
   color:#000;
   position: absolute;
-  top: 40%;
+  top: 0%;
   left: 43%;
   width: 30%;
   border: solid;  
