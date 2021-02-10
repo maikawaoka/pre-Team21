@@ -128,7 +128,7 @@
   display: flex;
   justify-content: center;
   font-size: 1.2vw;
-  color: #666666;
+  color: #393939;
   margin: 1.5vw;
 }
 
@@ -448,7 +448,7 @@
   margin: 0;
   padding: 1.8vw;
   background-color: #ffffff;
-  color: #666666;
+  color: #393939;
   font-size: 15px;
   position: fixed;
   z-index: 2;
@@ -518,7 +518,7 @@ img#modal-close {
   border-radius: 25vw;
   position: fixed;
   bottom: 8vw;
-  right: 2vw;
+  right: 3vw;
   opacity: 0;
   transition: all 0.65s;
 }
