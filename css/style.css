@@ -453,43 +453,49 @@ footer {
 /******************************************************************************
   member detail
 *******************************************************************************/
-.details-mv{
-  position: relative;
-  border: solid red;
+.person-mv{
+  display: flex;
+  margin-top: 40px;
+  background: green;
 }
 
 .person-img-area{
-  width: 42%;
-  display: block;
+  width: 44%;
   text-align: right;
-  border: solid;
+  margin-top: auto;
+  margin-bottom: auto;
+  border: solid red;
 }
 
 .person-text-area{
   color:#000;
-  position: absolute;
-  top: 0%;
-  left: 43%;
   width: 30%;
-  border: solid;  
+  border: solid blue;  
+}
+
+.person-name-area{
+  display: inline-block;
+  background: yellow;
 }
 
 .person-text-area h1{
   font-size: 15px;
-  font-weight: 100;
-  margin-bottom: 10;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 3px;
   font-family: unset;
 }
 
-.name-en{
+.name-english{
   font-size: 50px;
-  font-weight: 100;
-  margin-bottom: 30;
+  font-weight: bold;
+  margin-bottom: 25px;
   font-family: unset;
 }
 
 .list-area dl{
   line-height: 2;
+  font-weight: bold;
 }
 
 .list-area dt{
@@ -502,4 +508,52 @@ footer {
 
 .list-area dd{
   margin-left: 180px;
+}
+
+.person-contents{
+  width: 40%;
+  margin: auto;
+  margin-top: 40px;
+ background: #9a9a9a; 
+}
+
+.content-title{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: large;
+  background: #ededed;
+}
+
+.title-color{
+  color: aquamarine;
+}
+
+.detail-content h3{
+  font-size: x-large;
+  text-align: center;
+  margin-top: 10px;
+  border: solid;
+}
+
+.detail-content p{
+  margin-top: 2em;
+}
+
+.margin{
+  margin-top: 100px;
+}
+
+.other-person{
+  text-align: center;
+}
+
+.other-person h2::after{
+  content: '';
+  display: block;
+  background: rgba(0, 0, 255, 0.521);
+  height: 4px;
+  width: 80px;
+  margin: 10px auto 30px;
+  border-radius: 11px;
 }
