@@ -539,7 +539,6 @@ footer {
   font-size: 1.6vw;
   text-align: center;
   margin-top: 1.5vw;
-  border: solid;
 }
 
 .detail-content p{
@@ -552,14 +551,15 @@ footer {
 }
 
 .other-person{
+  display: block;
   text-align: center;
   margin-top: 10vw;
   background-color: #ebe8e8;
 }
 
 .other-person h2{
-  height: 5vw;
-  border: solid;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
 }
 
 .other-person h2::after{
