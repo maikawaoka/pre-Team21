@@ -587,3 +587,121 @@ footer {
 /******************************************************************************
   member detail
 *******************************************************************************/
+.person-mv{
+  display: flex;
+  margin-top: 4vw;
+  border: solid;
+}
+
+.person-img-area{
+  width: 44vw;
+  text-align: right;
+  margin-top: auto;
+  margin-bottom: auto;
+  border: solid;
+}
+
+.person-text-area{
+  width: 30vw;
+  border: solid;  
+}
+
+.person-name-area{
+  display: inline-block;
+  border: solid;
+}
+
+.person-text-area h1{
+  font-size: 1.3vw;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 0.5vw;
+}
+
+.name-english{
+  font-size: 3.5vw;
+  font-weight: bold;
+  color: #158bde;
+  margin-bottom: 4vw;
+  font-family: 'ヒラギノ丸ゴ ProN',sans-serif;
+}
+
+.name-english::after{
+  content: '';
+  display: block;
+  background: #158bde;
+  height: 0.7vw;
+  margin: 0.3vw;
+  border-radius: 10vw;
+}
+
+.list-area dl{
+  line-height: 2;
+}
+
+.list-area dt{
+  float: left;
+}
+
+.list-area dt::after{
+  content: ":";
+}
+
+.list-area dd{
+  margin-left: 14vw;
+}
+
+.person-contents{
+  width: 40vw;
+  margin: auto;
+  margin-top: 4vw;
+  border: solid; 
+}
+
+.content-title{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1.4vw;
+}
+
+.title-color{
+  color: rgb(15, 238, 164);
+}
+
+.detail-content h3{
+  font-size: 1.6vw;
+  text-align: center;
+  margin-top: 1.5vw;
+}
+
+.detail-content p{
+  line-height: 1.8;
+  margin-top: 2.8vw;
+}
+
+.margin{
+  margin-top: 13vw;
+}
+
+.other-person{
+  display: block;
+  text-align: center;
+  margin-top: 10vw;
+  background-color: #ebe8e8;
+}
+
+.other-person h2{
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+
+.other-person h2::after{
+  content: '';
+  display: block;
+  background: #158bde;
+  height: 0.7vw;
+  width: 10vw;
+  margin: auto;
+  border-radius: 10vw;
+}
